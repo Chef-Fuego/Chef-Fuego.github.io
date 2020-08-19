@@ -5,8 +5,12 @@ html, body {
 	height: 100%;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .flexwindow{
-  background-color: yellow;
+  background-color: white;
   min-height: 100%;
   height: 100%;
   display: flex;
@@ -14,31 +18,53 @@ html, body {
 
 .content{
   display: flex;
-  align-self: center;
+  align-items: center;
   width: 100%;
   justify-content: center;
+}
+
+  @media only screen and (max-width: 768px) {
+    .content{
+    flex-direction: column;
   }
 }
 
-
-.content h3, h1, h5{
-  	margin: 5px 0px 0px 0px; 
+.logo {
+  min-width:400px;
+  width: 40%;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
 }
 
-a {
-	margin-top: 6px;
-	display: inline-block;
+
+
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 
-
-.colour {
-  background: -webkit-linear-gradient(180deg, #00d39b, #4cb9c5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 
-h1, h5 {
-	font-weight: bold;
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 
 /*New CSS ENDS HERE */
