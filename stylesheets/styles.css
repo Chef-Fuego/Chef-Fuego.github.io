@@ -31,7 +31,8 @@ h1 {
 
 .logo {
   min-width:400px;
-  width: 40%;
+  height: 100%;
+  max-height: 400px;
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;
